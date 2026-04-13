@@ -1,5 +1,4 @@
 streamlit
-pipeline
-matplotlib.pyplot
-Counter
+transformers
+torch
 matplotlib
