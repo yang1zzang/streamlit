@@ -10,7 +10,7 @@ import os
 # =========================
 def setup_font():
     # GitHub에 함께 올린 폰트 파일 이름
-    font_path = "NanumGothic.ttf" 
+    font_path = "NanumGothic-Regular.ttf" 
     
     if os.path.exists(font_path):
         # 폰트 속성 설정
