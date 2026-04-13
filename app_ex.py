@@ -10,7 +10,7 @@ import os
 # =========================
 def setup_font():
     # GitHub에 함께 올린 폰트 파일 이름
-    font_path = "MALGUN.TTF" 
+    font_path = "NanumGothic.ttf" 
     
     if os.path.exists(font_path):
         # 폰트 속성 설정
@@ -20,7 +20,7 @@ def setup_font():
         return True
     else:
         # 파일이 없을 경우 로컬(윈도우) 폰트 시도
-        plt.rc('font', family='Malgun Gothic')
+        plt.rc('font', family='NanumGothic')
         return False
 
 has_font = setup_font()
