@@ -13,15 +13,10 @@ def setup_font():
     font_path = "NanumGothic-Regular.ttf" 
     
     if os.path.exists(font_path):
-        # 폰트 속성 설정
         font_prop = fm.FontProperties(fname=font_path)
-        plt.rc('font', family=font_prop.get_name())
+        font_name = font_prop.get_name()
+        plt.rc('font', family=font_name)
         plt.rcParams['axes.unicode_minus'] = False
-        return True
-    else:
-        # 파일이 없을 경우 로컬(윈도우) 폰트 시도
-        plt.rc('font', family='NanumGothic')
-        return False
 
 has_font = setup_font()
 
