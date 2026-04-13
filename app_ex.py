@@ -35,7 +35,7 @@ model = load_model()
 # =========================
 def analyze_sentiment(sentences, threshold):
     raw_results = model(sentences)
-    label_map = {"LABEL_1": "긍정", "LABEL_0": "부정"}
+    label_map = {"LABEL_1": "POS", "LABEL_0": "NEG"}
     
     processed_results = []
     for res in raw_results:
